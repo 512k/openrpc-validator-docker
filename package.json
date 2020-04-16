@@ -1,0 +1,17 @@
+{
+    "name": "openrpc-validator",
+    "version": "0.0.1",
+    "description": "Validates an OpenRPC document.",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/512k/openrpc-validator-docker.git"
+    },
+    "bin": {
+        "openrpc-validator": "./openrpc-validator.js"
+    },
+    "dependencies": {
+        "@open-rpc/schema-utils-js": "1.13.0",
+        "yargs": "13.2"
+    }
+}
