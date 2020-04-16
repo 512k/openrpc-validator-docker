@@ -19,7 +19,7 @@ OpenRPC Specification: <https://spec.open-rpc.org/>
 ### Usage
 
 ```shell script
-$ docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" 512k/openrpc-validator:latest -f ./path/to/openrpc.json
+$ docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" 512k/openrpc-validator -f ./path/to/openrpc.json
 ```
 
 All supported docker tags [can be found here][link_hub_tags].
@@ -28,6 +28,8 @@ All supported docker tags [can be found here][link_hub_tags].
 
 New versions publishing is very simple - just update dependencies version(s) in `./package.json` file and "publish" new release using repo releases page.
 
+> Release version _(and git tag, of course)_ MUST starts with `v` prefix (eg.: `v0.0.1` or `v1.2.3-RC1`)
+>
 > Do not forget to update own version in `./package.json`
 
 ### License
