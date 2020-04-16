@@ -19,7 +19,7 @@ OpenRPC Specification: <https://spec.open-rpc.org/>
 ## Usage
 
 ```shell script
-$ docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" 512k/openrpc-validator -f ./path/to/openrpc.json
+$ docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" 512k/openrpc-validator:0.0.1 -f ./openrpc.json
 ```
 
 All supported docker tags [can be found here][link_hub_tags].
