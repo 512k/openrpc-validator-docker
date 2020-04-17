@@ -9,8 +9,8 @@ on:
   pull_request:
 
 jobs:
-  image:
-    name: Build docker image
+  docker:
+    name: Using docker image
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
@@ -21,7 +21,7 @@ jobs:
       - name: Build image
         run: docker build -t image:local -f Dockerfile .
 
-      - name: Try to execute
+      - name: Show help
         run: docker run --rm image:local --help
 
       - name: Get open-rpc examples
@@ -29,5 +29,8 @@ jobs:
         with:
           repository: open-rpc/examples # Link: <https://github.com/open-rpc/examples/>
 
-      - name: Run linter in docker
+      - name: Run linter using valid examples
         run: find ./service-descriptions -iname '*.json' -exec docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" image:local -f {} \;
+
+      - name: Run linter using wrong file
+        run: docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" image:local -f ./service-descriptions/package.json || exit 1
