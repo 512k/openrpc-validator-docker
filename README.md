@@ -37,11 +37,11 @@ New versions publishing is very simple - just update dependencies version(s) in 
 
 MIT. Use anywhere for your pleasure.
 
-[badge_automated]:https://img.shields.io/docker/cloud/automated/512k/openrpc-validator.svg?style=flat-square&maxAge=30
+[badge_automated]:https://img.shields.io/docker/cloud/automated/512k/openrpc-validator.svg?maxAge=30
 [badge_pulls]:https://img.shields.io/docker/pulls/512k/openrpc-validator.svg?style=flat-square&maxAge=30
-[badge_issues]:https://img.shields.io/github/issues/512k/openrpc-validator-docker.svg?style=flat-square&maxAge=30
-[badge_build]:https://img.shields.io/docker/cloud/build/512k/openrpc-validator.svg?style=flat-square&maxAge=30
-[badge_license]:https://img.shields.io/github/license/512k/openrpc-validator-docker.svg?style=flat-square&maxAge=30
+[badge_issues]:https://img.shields.io/github/issues/512k/openrpc-validator-docker.svg?maxAge=30
+[badge_build]:https://img.shields.io/docker/cloud/build/512k/openrpc-validator.svg?maxAge=30
+[badge_license]:https://img.shields.io/github/license/512k/openrpc-validator-docker.svg?maxAge=30
 [badge_test]:https://img.shields.io/github/workflow/status/512k/openrpc-validator-docker/test?maxAge=30&logo=github
 [link_test]:https://github.com/512k/openrpc-validator-docker/actions
 [link_hub]:https://hub.docker.com/r/512k/openrpc-validator/
