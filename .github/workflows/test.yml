@@ -33,4 +33,4 @@ jobs:
         run: find ./service-descriptions -iname '*.json' -exec docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" image:local -f {} \;
 
       - name: Run linter using wrong file
-        run: docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" image:local -f ./service-descriptions/petstore-openrpc.json || exit 0
+        run: docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" image:local -f ./package.json && exit 1 || exit 0
