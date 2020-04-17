@@ -27,7 +27,7 @@ jobs:
       - name: Get open-rpc examples
         uses: actions/checkout@v2
         with:
-          repository: open-rpc/examples
+          repository: open-rpc/examples # Link: <https://github.com/open-rpc/examples/>
 
       - name: List
-        run: ls -la ./service-descriptions
+        run: find ./service-descriptions -iname '*.json' -exec echo "File is {}" \;
