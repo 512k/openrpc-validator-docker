@@ -29,5 +29,5 @@ jobs:
         with:
           repository: open-rpc/examples # Link: <https://github.com/open-rpc/examples/>
 
-      - name: List
-        run: find ./service-descriptions -iname '*.json' -exec echo "File is {}" \;
+      - name: Run linter in docker
+        run: find ./service-descriptions -iname '*.json' -exec docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" image:local -f {} \;
