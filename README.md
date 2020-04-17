@@ -6,6 +6,7 @@
 
 [![Build][badge_automated]][link_hub]
 [![Build][badge_build]][link_hub]
+[![Test Status][badge_test]][link_test]
 [![Docker Pulls][badge_pulls]][link_hub]
 [![Issues][badge_issues]][link_issues]
 [![License][badge_license]][link_license]
@@ -41,6 +42,8 @@ MIT. Use anywhere for your pleasure.
 [badge_issues]:https://img.shields.io/github/issues/512k/openrpc-validator-docker.svg?style=flat-square&maxAge=30
 [badge_build]:https://img.shields.io/docker/cloud/build/512k/openrpc-validator.svg?style=flat-square&maxAge=30
 [badge_license]:https://img.shields.io/github/license/512k/openrpc-validator-docker.svg?style=flat-square&maxAge=30
+[badge_test]:https://img.shields.io/github/workflow/status/512k/openrpc-validator-docker/test?maxAge=30&logo=github
+[link_test]:https://github.com/512k/openrpc-validator-docker/actions
 [link_hub]:https://hub.docker.com/r/512k/openrpc-validator/
 [link_hub_tags]:https://hub.docker.com/r/512k/openrpc-validator/tags
 [link_license]:https://github.com/512k/openrpc-validator-docker/blob/master/LICENSE

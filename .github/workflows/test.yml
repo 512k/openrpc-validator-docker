@@ -1,0 +1,36 @@
+name: test
+
+on:
+  push:
+    branches:
+      - master
+    tags-ignore:
+      - '**'
+  pull_request:
+
+jobs:
+  docker:
+    name: Using docker image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Build image
+        run: docker build -t image:local -f Dockerfile .
+
+      - name: Show help
+        run: docker run --rm image:local --help
+
+      - name: Get open-rpc examples
+        uses: actions/checkout@v2
+        with:
+          repository: open-rpc/examples # Link: <https://github.com/open-rpc/examples/>
+
+      - name: Run linter using valid examples
+        run: find ./service-descriptions -name '*.json' -exec docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" image:local -f {} \;
+
+      - name: Run linter using wrong file
+        run: docker run --rm -v "$(pwd):/rootfs:ro" -w "/rootfs" image:local -f ./package.json && exit 1 || exit 0
