@@ -23,3 +23,11 @@ jobs:
 
       - name: Try to execute
         run: docker run --rm image:local --help
+
+      - name: Get open-rpc examples
+        uses: actions/checkout@v2
+        with:
+          repository: open-rpc/examples
+
+      - name: List
+        run: ls -la ./service-descriptions
