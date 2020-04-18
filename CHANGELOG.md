@@ -8,7 +8,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
-- Node.js deps updated
+- Node.js deps updated [#PR2]
+
+[#PR2]:https://github.com/512k/openrpc-validator-docker/pull/2
 
 ## v0.0.1
 
