@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v0.0.5
+
+### Changed
+
+- Bump `@open-rpc/schema-utils-js` from `1.13.4` to `1.14.0` [#PR7]
+
+[#PR4]:https://github.com/512k/openrpc-validator-docker/pull/7
+
 ## v0.0.4
 
 ### Changed
