@@ -11,7 +11,7 @@
         "openrpc-validator": "./openrpc-validator.js"
     },
     "dependencies": {
-        "@open-rpc/schema-utils-js": "1.14.2",
+        "@open-rpc/schema-utils-js": "1.14.3",
         "yargs": "15.4"
     }
 }
