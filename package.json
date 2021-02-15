@@ -12,6 +12,6 @@
     },
     "dependencies": {
         "@open-rpc/schema-utils-js": "1.14.3",
-        "yargs": "15.4"
+        "yargs": "16.2"
     }
 }
